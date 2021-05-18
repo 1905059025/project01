@@ -1,0 +1,80 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+small,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font:16px "微软雅黑";
+    outline: none;
+}
+
+em,
+strong,
+i{
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6{
+    /* 字体加粗 */
+    font-weight: normal;
+}
+
+ul,ol{
+    /* 去除原点 */
+    list-style: none;
+}
+
+a{
+    /* 改变标签的分类：行内块级元素 */
+    display: inline-block;
+    color: #333;
+    /* 去除a标签的下划线 */
+    text-decoration: none;
+    font-size: 13px;
+}
+
+img{
+    display: block;
+}
+
+/* 清楚浮动 */
+.clearfloat::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+/* 版心的设置 */
+.w1300{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+input::-webkit-input-placeholder{
+    color: #ccc;
+}
+input::-moz-placeholder{
+    color: #ccc;
+}
+input::-ms-input-placeholder{
+    color: #ccc;
+}

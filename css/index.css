@@ -1,0 +1,247 @@
+/* 头部标题 start */
+.main_top{
+    height: 110px;
+    border-bottom: 5px solid #52d3f0 ;
+}
+.main_top_word{
+    height: 110px;
+    text-align: left;
+    line-height: 110px;
+    color: #52d3f0;
+    font-size: 30px;
+}
+/* 头部标题 end */
+
+/* 头部导航条 start */
+.main_nav{
+    height: 40px;
+    margin-top: 5px;
+    line-height: 50px;
+}
+.main_nav ul li{
+    float: left;
+    line-height: 40px;
+}
+.main_nav ul li a{
+    color: #4e4c4c;
+    font-size: 16px ;
+}
+/* 头部导航条 end */
+
+/* 用户信息筛选start */
+.select_area{
+    height: 80px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #f3f3f3;
+    position: relative;
+}
+.select_menu,.sort_menu{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.select_area_title{
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    display: inline-block;
+    float: left;
+}
+.select_menu span,.sort_menu span{
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    font-size: 16px;
+    float: left;
+    display: inline-block;
+}
+#select_btn,#add_info{
+    margin-left: 30px;
+    text-align: center;
+    width: 55px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;   
+    background-color: #52d3f0;
+    border-radius: 3px;
+    position: relative;
+    top: 10px;
+}
+.select_menu input,
+.select_menu select,
+.sort_menu input,
+.sort_menu p{
+    float: left;
+    position: relative;
+    top: 10px;
+}
+/* 用户信息筛选end */
+
+/* 数据显示 start */
+.stuInfoShow{
+    margin-top: 10px;
+}
+.stuInfoShow ul{
+    height: 60px;
+    border: 1px solid #e8e8e8;
+}
+.stuInfoShow ul:nth-child(1){
+    background-color: #52d3f0;
+}
+.stuInfoShow ul li{
+    padding:0 5px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    color: #4e4c4c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-right: 1px solid #bbb;
+}
+.stuInfoShow ul li:nth-child(1),
+.stuInfoShow ul li:nth-child(2),
+.stuInfoShow ul li:nth-child(4),
+.stuInfoShow ul li:nth-child(5){
+    width: 125px;
+}
+.stuInfoShow ul li:nth-child(3),
+.stuInfoShow ul li:nth-child(6),
+.stuInfoShow ul li:nth-child(7){
+    width:165px;
+}
+.stuInfoShow ul li:nth-child(8){
+    width:215px ;
+}
+.stuInfoShow ul li button{
+    width: 60px;
+    height: 30px;
+    border: none;
+    margin: 0 5px;
+    border-radius: 3px;
+    background-color: #52d3f0;
+    cursor: pointer;
+}
+.stuInfoShow div.noData{
+    width: 1110px;
+    height: 550px;
+    margin: 0 auto;
+    background-image: url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3214428190,3968304704&fm=26&gp=0.jpg);
+    background-repeat: no-repeat;
+    background-position: 250px 40px;
+}
+/* 数据显示 end */
+
+/* 分页导航 start */
+.paging{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.paging button{
+    width: 60px;
+    height: 30px;
+    color: #4e4c4c;
+    font-size: 14px;
+    border: 2px solid #52d3f0;
+}
+.paging button:hover{
+    border: none;
+    background-color: rgba(82, 211, 240, 0.5);
+}
+/* 分页导航 end */
+
+/* 添加或者修改弹出框 start */
+.addDataArea{
+    /* 沿用父级的宽高 */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    display: none;
+}
+.addData{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 8px;
+}
+.addDataTop{
+    width: 100%;
+    height: 50px;
+    background-color: #493476;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: left;
+    line-height: 50px;
+    color: #fff;
+    position: relative;
+}
+.addData .addDataTop .closeAdd{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    z-index: 15;
+    cursor: pointer;
+}
+.addData .addDataMain{
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+    position: relative;
+}
+.addDataMain input[type="text"]{
+    width: 250px;
+    height: 35px;
+    color: #333;
+    margin: 10px 70px;
+}
+.addDataMain #stuSex,
+.addDataMain #stuBirth{
+    width: 60%;
+    height: 35px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.addDataMain #stuSex{
+    padding: 0 0 0 10px;
+}
+.addDataMain #stuSex input[type="radio"]{
+    margin: 0 20px 0 10px;
+}
+.addDataMain #stuBirth select{
+    margin: 0 3px 0 10px;
+}
+.sureAdd{
+    width: 60%;
+    height: 40px;
+    background-color: #493476;
+    margin: 30px auto;
+    border-radius: 5px ;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+/* 添加或者修改弹出框 end */
